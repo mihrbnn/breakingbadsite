@@ -1,0 +1,10 @@
+#card {
+    background-color: rgb(27, 25, 25)
+}
+
+.card-image-top{
+    width: 75%;
+    height: 15vw;
+    object-fit:contain
+}
+    

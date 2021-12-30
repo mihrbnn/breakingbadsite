@@ -1,0 +1,18 @@
+
+img{
+    height: 40rem;
+}
+
+#search-btn{
+    letter-spacing: 0.2rem;
+    background-color: rgb(56, 55, 55)
+}
+
+#search-container{
+    min-height: 15rem;
+}
+
+#search-btn:hover{
+    background-color: gray;
+    transition: 0.75s;
+}
