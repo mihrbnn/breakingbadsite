@@ -57,32 +57,32 @@ function SearchPage() {
           </div>
         </form>
       </div>
-      {searchItems.map((item) => (
-        <div class="card col-md-6 offset-md-3 col-sm-12 mb-5 border-2">
-          <div class="row g-0">
-            <div class="col-md-5 d-flex">
+      {searchItems.map((item,index) => (
+        <div key={index} className="card col-md-6 offset-md-3 col-sm-12 mb-5 border-2">
+          <div className="row g-0">
+            <div className="col-md-5 d-flex">
               <img 
                 src={item.img}
-                class="img-fluid rounded-start rounded-1 border-2 ms-4 my-4"
+                className="img-fluid rounded-start rounded-1 border-2 ms-4 my-4"
                 alt="character image"
               />
             </div>
-            <div class="col-md-7">
-              <div class="card-body mt-5 text-center">
-                <h5 class="card-title mb-3 pb-3">{item.name} <span className="text-secondary fs-6"> <br />({item.portrayed })</span></h5>
+            <div className="col-md-7">
+              <div className="card-body mt-5 text-center">
+                <h5 className="card-title mb-3 pb-3">{item.name} <span className="text-secondary fs-6"> <br />({item.portrayed })</span></h5>
                 <div>
-                  <h6 class="card-text">Aliases</h6>
+                  <h6 className="card-text">Aliases</h6>
                   <p>{item.nickname}</p>
                 </div>
                 <div>
-                  <h6 class="card-text">Birthday</h6>
+                  <h6 className="card-text">Birthday</h6>
                   <p>{item.birthday}</p>
                 </div>
                 <div>
-                  <h6 class="card-text">Occupation</h6>
+                  <h6 className="card-text">Occupation</h6>
                   <p>
-                    {item.occupation.map((item) => (
-                      <p>{item}</p>
+                    {item.occupation.map((item,index) => (
+                      <p key={index}>{item}</p>
                     ))}
                   </p>
                 </div>

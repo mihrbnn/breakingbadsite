@@ -44,7 +44,7 @@ function CharacterDetail() {
                     </tr>
                     <tr>
                       <th scope="row">Occupation</th>
-                      <td> {item.occupation.map(item => <p> {item} </p> )} </td>
+                      <td> {item.occupation.map((item,index) => <p key={index}> {item} </p> )} </td>
                     </tr>
                     <tr>
                       <th scope="row">Appearance Seasons</th>

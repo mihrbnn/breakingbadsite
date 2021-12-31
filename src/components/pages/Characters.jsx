@@ -17,7 +17,7 @@ function Characters() {
   return (
     <div id="body" >
     <div className="container col-sm-5 ms-5 ps-3 offset-sm-3">
-      <table class="table table-hover table-borderless mt-5">
+      <table className="table table-hover table-borderless mt-5">
         <thead>
           <tr>
             <th scope="col"></th>
@@ -27,7 +27,7 @@ function Characters() {
         </thead>
 
         {data.map((item, index) => (
-          <tbody>
+          <tbody key={index}>
             <tr>
               <th >
                 <Link
