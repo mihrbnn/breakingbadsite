@@ -13,7 +13,7 @@ The site has characters page, details page about characters, quotes page of char
 * React Router Dom
 * Bootstrap 5
 * CSS
-* React Paginate
+
 
 [DEMO](https://breaking-badsite.netlify.app/) 
 
