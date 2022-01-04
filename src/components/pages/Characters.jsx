@@ -64,8 +64,3 @@ function Characters() {
 
 export default Characters;
 
-{
-  /* <li key={index}>
-                <Link to={`${item.char_id}`}>{item.name}</Link>
-            </li> */
-}
