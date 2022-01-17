@@ -3,7 +3,6 @@ import { Link, useParams } from "react-router-dom";
 import base_URL from "../../info";
 import "./style/characterdetail.css";
 
-
 function CharacterDetail() {
   const params = useParams();
   console.log(params.characterId);
@@ -23,8 +22,12 @@ function CharacterDetail() {
       {char.map((item, index) => (
         <div key={index} className="row col-md-4 offset-md-4 col-sm-12 mt-5">
           <div className="col mb-4">
-            <div id="card" className="card h-100 text-center border-3">
-              <img className="card-img-top rounded-4 border-2" src={item.img} alt="Card cap" />
+            <div id="detail-card" className="card h-100 text-center border-3">
+              <img
+                className="card-img-top rounded-4 border-2"
+                src={item.img}
+                alt="Card cap"
+              />
               <div className="card-body text-white">
                 <h4 className="card-title pt-3">{item.name}</h4>
                 <p className="card-text">
@@ -44,11 +47,20 @@ function CharacterDetail() {
                     </tr>
                     <tr>
                       <th scope="row">Occupation</th>
-                      <td> {item.occupation.map((item,index) => <p key={index}> {item} </p> )} </td>
+                      <td>
+                        {" "}
+                        {item.occupation.map((item, index) => (
+                          <p key={index}> {item} </p>
+                        ))}{" "}
+                      </td>
                     </tr>
                     <tr>
                       <th scope="row">Appearance Seasons</th>
-                      <td>{item.appearance.map((item, index) => ((index ? '-' : '') + item ))}</td>
+                      <td>
+                        {item.appearance.map(
+                          (item, index) => (index ? "-" : "") + item
+                        )}
+                      </td>
                     </tr>
                     <tr>
                       <th scope="row">Status</th>
@@ -66,5 +78,3 @@ function CharacterDetail() {
 }
 
 export default CharacterDetail;
-
-

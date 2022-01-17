@@ -27,8 +27,10 @@ function SearchPage() {
     navigate(`/search?q=${event.target.q.value}`);
   }
   const searchName = location.search.split("?q=")[1];
-  const searchItems = char.filter((item) =>
-    item.name.toLowerCase().includes(searchName) || item.nickname.toLowerCase().includes(searchName) 
+  const searchItems = char.filter(
+    (item) =>
+      item.name.toLowerCase().includes(searchName) ||
+      item.nickname.toLowerCase().includes(searchName)
   );
   return (
     <>
@@ -57,11 +59,15 @@ function SearchPage() {
           </div>
         </form>
       </div>
-      {searchItems.map((item,index) => (
-        <div key={index} className="card col-md-6 offset-md-3 col-sm-12 mb-5 border-2">
-          <div className="row g-0">
-            <div className="col-md-5 d-flex">
-              <img 
+      {searchItems.map((item, index) => (
+        <div
+          key={index}
+          className="card col-md-6 offset-md-3 col-sm-12 mb-5 border-2"
+          id="card"
+        >
+          <div className="row g-0" id="card-context">
+            <div className="col-md-5 d-flex" id="image-box">
+              <img
                 src={item.img}
                 className="img-fluid rounded-start rounded-1 border-2 ms-4 my-4"
                 alt="character image"
@@ -69,7 +75,13 @@ function SearchPage() {
             </div>
             <div className="col-md-7">
               <div className="card-body mt-5 text-center">
-                <h5 className="card-title mb-3 pb-3">{item.name} <span className="text-secondary fs-6"> <br />({item.portrayed })</span></h5>
+                <h5 className="card-title mb-3 pb-3">
+                  {item.name}{" "}
+                  <span className="text-secondary fs-6">
+                    {" "}
+                    <br />({item.portrayed})
+                  </span>
+                </h5>
                 <div>
                   <h6 className="card-text">Aliases</h6>
                   <p>{item.nickname}</p>
@@ -81,7 +93,7 @@ function SearchPage() {
                 <div>
                   <h6 className="card-text">Occupation</h6>
                   <p>
-                    {item.occupation.map((item,index) => (
+                    {item.occupation.map((item, index) => (
                       <p key={index}>{item}</p>
                     ))}
                   </p>

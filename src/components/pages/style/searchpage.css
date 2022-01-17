@@ -1,18 +1,63 @@
-
-img{
-    height: 40rem;
+img {
+  height: 40rem;
 }
 
-#search-btn{
-    letter-spacing: 0.2rem;
-    background-color: rgb(56, 55, 55)
+#search-btn {
+  letter-spacing: 0.2rem;
+  background-color: rgba(56, 55, 55, 0.658);
 }
 
-#search-container{
-    min-height: 15rem;
+#search-container {
+  min-height: 15rem;
 }
 
-#search-btn:hover{
-    background-color: gray;
-    transition: 0.75s;
+#search-btn:hover {
+  background-color: gray;
+  transition: 0.75s;
+}
+
+#image-box {
+  overflow: hidden;
+  border-radius: 5px;
+  padding: 7px;
+}
+
+#image-box img {
+  -webkit-transition: all 0.9s ease;
+  transition: all 0.9s ease;
+  -moz-transition: all 0.9s ease;
+  -o-transition: all 0.9s ease;
+  -ms-transition: all 0.9s ease;
+}
+
+#card:hover #image-box img {
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
+  transform: scale(1.07);
+  box-shadow: 8px 8px 8px rgba(0, 0.4, 0, 0.4);
+}
+
+#card {
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+}
+
+#card:hover {
+  background: #ecf0f1;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+#card {
+  background-color: #f1f1f1;
 }
