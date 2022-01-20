@@ -1,12 +1,10 @@
-#body{
-    background-image: url(../../../img/bb-wp6.jpg);
-    background-size:cover;
-    background-position:center;
-    background-repeat: no-repeat;
-    background-attachment:fixed;
-    min-height: 500px;
-    opacity: 0.8;
-    overflow-x: hidden;
-    
+#body {
+  background-image: url(../../../img/bb-wp6.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 500px;
+  opacity: 0.8;
+  overflow-x: hidden;
 }
-

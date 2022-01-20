@@ -50,14 +50,16 @@ img {
 }
 
 #card:hover {
-  background: #ecf0f1;
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  background: #f7f1e3;
+  color: #161616;
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  -ms-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
 }
 
 #card {
-  background-color: #f1f1f1;
+  background-color: #2d3436;
+  color: #ecf0f1;
 }

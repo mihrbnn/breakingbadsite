@@ -18,62 +18,66 @@ function CharacterDetail() {
   }, []);
 
   return (
-    <div>
+    <>
       {char.map((item, index) => (
-        <div key={index} className="row col-md-4 offset-md-4 col-sm-12 mt-5">
-          <div className="col mb-4">
-            <div id="detail-card" className="card h-100 text-center border-3">
-              <img
-                className="card-img-top rounded-4 border-2"
-                src={item.img}
-                alt="Card cap"
-              />
-              <div className="card-body text-white">
-                <h4 className="card-title pt-3">{item.name}</h4>
-                <p className="card-text">
-                  {item.portrayed} as {item.name}
-                </p>
-              </div>
-              <div className="card-body ps-0">
-                <table className="table table-borderless">
-                  <tbody className="mt-3 text-white">
-                    <tr>
-                      <th scope="row">Birthday</th>
-                      <td>{item.birthday}</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Aliases</th>
-                      <td>{item.nickname}</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Occupation</th>
-                      <td>
+        <div key={index} className="row mt-5">
+          <div className="col d-flex justify-content-center mb-4">
+            <div className="flip-card" tabIndex="0">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
+                  <img
+                    className="card-img-top rounded-4 border-2"
+                    src={item.img}
+                    alt="Card cap"
+                  />
+                </div>
+                <div className="flip-card-back">
+                  <div className="card-body mt-3 text-center">
+                    <h5 className="card-title mb-2 pb-3">
+                      {item.name}{" "}
+                      <span className="text-secondary fs-6 text-light">
                         {" "}
+                        <br />({item.portrayed})
+                      </span>
+                    </h5>
+                    <div>
+                      <h5 className="card-text">Aliases</h5>
+                      <p>{item.nickname}</p>
+                    </div>
+                    <div>
+                      <h5 className="card-text">Birthday</h5>
+                      <p>{item.birthday}</p>
+                    </div>
+                    <div>
+                      <h5 className="card-text">Occupation</h5>
+                      <p>
                         {item.occupation.map((item, index) => (
-                          <p key={index}> {item} </p>
-                        ))}{" "}
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Appearance Seasons</th>
-                      <td>
+                          <p className="m-0" key={index}>
+                            {item}
+                          </p>
+                        ))}
+                      </p>
+                    </div>
+                    <div>
+                      <h5 className="card-text">Appearance Seasons</h5>
+                      <p>
                         {item.appearance.map(
                           (item, index) => (index ? "-" : "") + item
                         )}
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Status</th>
-                      <td>{item.status}</td>
-                    </tr>
-                  </tbody>
-                </table>
+                      </p>
+                    </div>
+                    <div>
+                      <h5 className="card-text">Status</h5>
+                      <p>{item.status}</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       ))}
-    </div>
+    </>
   );
 }
 

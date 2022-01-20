@@ -1,0 +1,7 @@
+#quote-page {
+  background-image: url(/src/img/bb-wp3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 500px;
+}
