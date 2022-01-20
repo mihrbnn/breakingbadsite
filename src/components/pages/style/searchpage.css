@@ -47,6 +47,7 @@ img {
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
 }
 
 #card:hover {

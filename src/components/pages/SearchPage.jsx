@@ -1,5 +1,6 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import base_URL from "../../info";
 import "./style/searchpage.css";
 
@@ -60,7 +61,8 @@ function SearchPage() {
         </form>
       </div>
       {searchItems.map((item, index) => (
-        <div
+        <Link
+          to={`${item.char_id}`}
           key={index}
           className="card col-md-6 offset-md-3 col-sm-12 mb-5 border-2"
           id="card"
@@ -101,7 +103,7 @@ function SearchPage() {
               </div>
             </div>
           </div>
-        </div>
+        </Link>
       ))}
     </>
   );
