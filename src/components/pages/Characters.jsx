@@ -16,7 +16,7 @@ function Characters() {
 
   return (
     <div id="body" >
-    <div className="container col-sm-5 ms-5 ps-3 offset-sm-3">
+    <div className="container col-sm-5 ms-md-5 ps-md-3 offset-sm-3">
       <table className="table table-hover table-borderless mt-5">
         <thead>
           <tr>

@@ -16,7 +16,7 @@ function Nav() {
               .map((item, index) => (
                 <li className="nav-item" key={index}>
                   <Link
-                    className="nav-link active text-white me-4"
+                    className="nav-link active text-white me-md-4"
                     to={item.path}
                   >
                     {item.title}

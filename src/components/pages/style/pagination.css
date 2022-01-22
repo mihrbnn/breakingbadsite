@@ -4,20 +4,22 @@
   list-style: none;
   display: flex;
   justify-content: center;
+  color:white
 }
 
 .paginationBttns a {
   padding: 12px;
   margin: 4px;
   border: 0;
+ 
 }
 
 .paginationBttns a:hover {
-  color: white !important;
+  color: rgb(185, 14, 14) !important;
 }
 
 .paginationActive a {
-  color: white;
+  color: rgb(185, 14, 14) !important;
 }
 
 .paginationBttns a {

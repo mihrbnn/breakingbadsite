@@ -71,8 +71,8 @@ function SearchPage() {
             <div className="col-md-5 d-flex" id="image-box">
               <img
                 src={item.img}
-                className="img-fluid rounded-start rounded-1 border-2 ms-4 my-4"
-                alt="character image"
+                className="img-fluid rounded-start rounded-1 border-2 ms-md-4 my-md-4"
+                alt="character"
               />
             </div>
             <div className="col-md-7">
